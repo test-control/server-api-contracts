@@ -5,7 +5,10 @@ export namespace ListTreeLeaves{
   export interface PathRequestParams {
     entityId: string;
   }
-  export interface QueryRequestParams {}
+  export interface QueryRequestParams {
+    page?: number;
+    perPage?: number;
+  }
   export interface CookieRequestParams {}
   export interface HeaderRequestParams {}
   export type ApiRequest = Request<Required<PathRequestParams>, ResponseBody, {}, QueryRequestParams>
@@ -19,10 +22,6 @@ export namespace ListTreeLeaves{
        * Title of root leaf
        */
       title: string;
-      /**
-       * Id of parent
-       */
-      parentId?: string;
       createdAt: string;
     }[];
     meta: {

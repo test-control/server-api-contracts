@@ -1,7 +1,7 @@
 /* tslint:disable */
 import { Request, Response } from 'express'
 
-export namespace GetProjectTreeRoot{
+export namespace GetTreeRootPath{
   export interface PathRequestParams {
     entityId: string;
   }
@@ -20,7 +20,7 @@ export namespace GetProjectTreeRoot{
        */
       title: string;
       createdAt: string;
-    };
+    }[];
   }
   export type ResponseBody = ApplicationJson200ResponseBody
   export type ApiResponse = Response<ResponseBody>
