@@ -30,6 +30,7 @@ export namespace ListTreeTestCases{
        * Tree id
        */
       treeId: string;
+      displayOrder: number;
     }[];
     meta: {
       /**
