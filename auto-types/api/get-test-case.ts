@@ -24,9 +24,9 @@ export namespace GetTestCase{
        */
       description?: string;
       /**
-       * Tree id
+       * Test suite id
        */
-      treeId: string;
+      testSuiteId: string;
       displayOrder: number;
     };
   }

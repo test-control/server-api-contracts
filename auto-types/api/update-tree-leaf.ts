@@ -42,27 +42,34 @@ export namespace UpdateTreeLeaf{
     };
   }
   export interface ApplicationJson400ResponseBody {
-    errors: {
+    errors?: {
       /**
-       * Can be any value - string, number, boolean, array or object
+       * param path
        */
-      value: {
-        [k: string]: unknown;
-      };
-      /**
-       * error code
-       */
-      msg: string;
-      /**
-       * param name
-       */
-      param: string;
-      /**
-       * param location
-       */
-      location: string;
+      path: string;
     }[];
-    meta?: {
+    meta: {
+      /**
+       * Validation error
+       */
+      code:
+        | "input-validation-error"
+        | "400"
+        | "411"
+        | "412"
+        | "413"
+        | "414"
+        | "415"
+        | "416"
+        | "417"
+        | "418"
+        | "421"
+        | "422"
+        | "424"
+        | "431"
+        | "451";
+      [k: string]: unknown;
+    } & {
       /**
        * Meta information about related exception
        */

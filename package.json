@@ -1,6 +1,6 @@
 {
   "name": "@test-control/server-api-contracts",
-  "version": "1.0.19",
+  "version": "1.0.22",
   "description": "Server api contracts",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
